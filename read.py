@@ -16,3 +16,10 @@ sum_len = 0
 for singal_character in data:
 	sum_len = sum_len + len(singal_character)
 print('the average of words is', sum_len/len(data))
+
+new = []
+for single_message in data: 
+    if len(single_message) < 100: 
+    	new.append(single_message)
+print('total are', len(new), 'smalle than 100')
+print(new[0])
